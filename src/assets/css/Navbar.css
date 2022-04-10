@@ -8,7 +8,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 1.5rem 0;
-  color: #314C62;
+  color: #314c62;
   letter-spacing: 0.5px;
   font-size: 16px;
 }
@@ -28,7 +28,7 @@ body {
 }
 .nav-container .navbar a {
   text-decoration: none;
-  color: #314C62;
+  color: #314c62;
   margin-right: 30px;
   font-weight: 500;
 }
@@ -39,7 +39,7 @@ body {
 .nav-container .btn {
   padding: 10px 20px;
   border: none;
-  background-color: #314C62;
+  background-color: #314c62;
   color: #f7f7f7;
   font-size: 16px;
   cursor: pointer;

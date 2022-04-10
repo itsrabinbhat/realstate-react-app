@@ -1,35 +1,36 @@
-$primary-color:#314C62;
+$primary-color: #314c62;
 $light-color: #f7f7f7;
+$shadow-color: #314c6225;
 
-@mixin btnPrimary($bg:$primary-color,$text:$light-color) {
-    padding: 10px 20px;
-    border: none;
-    background-color: $bg;
-    color: $text;
-    font-size: 16px;
-    cursor: pointer;
+@mixin btnPrimary($bg: $primary-color, $text: $light-color) {
+  padding: 10px 20px;
+  border: none;
+  background-color: $bg;
+  color: $text;
+  font-size: 16px;
+  cursor: pointer;
 
-    &:hover {
-        opacity: 0.9;
-    }
+  &:hover {
+    opacity: 0.9;
+  }
 
-    &:active {
-        transform: scale(0.98);
-    }
+  &:active {
+    transform: scale(0.98);
+  }
 }
-@mixin btnOutlined($color:$primary-color) {
-    padding: 10px 20px;
-    border: 1px solid $color;
-    background-color: transparent;
-    color: $color;
-    font-size: 16px;
-    cursor: pointer;
+@mixin btnOutlined($color: $primary-color) {
+  padding: 10px 20px;
+  border: 1px solid $color;
+  background-color: transparent;
+  color: $color;
+  font-size: 16px;
+  cursor: pointer;
 
-    &:hover {
-        opacity: 0.9;
-    }
+  &:hover {
+    opacity: 0.9;
+  }
 
-    &:active {
-        transform: scale(0.98);
-    }
+  &:active {
+    transform: scale(0.98);
+  }
 }
