@@ -1,17 +1,15 @@
 import { Formik } from "formik";
-import React, { useRef } from "react";
+import React from "react";
 import { object, string } from "yup";
-import { Notyf } from "notyf";
+import { ToastContainer, toast } from "react-toast";
 import "../assets/css/Contact.css";
 
 const Contact = () => {
-  const errMsg = useRef(null);
   const contactValidation = object({
     name: string().required("All fields are required!"),
     email: string().email().required("All fields are required!"),
     msg: string().required("All fields are required!"),
   });
-  const notify = new Notyf();
   return (
     <div className="contact-container">
       <div className="img-container">
@@ -24,8 +22,9 @@ const Contact = () => {
         <div className="form-container">
           <Formik
             initialValues={{ name: "", email: "", msg: "" }}
-            onSubmit={(values) => {
+            onSubmit={(values, { resetForm }) => {
               console.log(values);
+              resetForm({ values: "" });
             }}
             validationSchema={contactValidation}
           >
@@ -34,36 +33,39 @@ const Contact = () => {
                 onSubmit={(e) => {
                   e.preventDefault();
                   handleSubmit();
-                  console.log(errMsg);
+                  console.log(errors);
+                  if (errors.name) {
+                    toast.warn(errors.name);
+                  } else if (errors.email) {
+                    toast.warn(errors.email);
+                  } else if (errors.msg) {
+                    toast.warn(errors.msg);
+                  } else {
+                    toast.success("Thank you for contacting us!");
+                  }
                 }}
               >
                 <input
                   type="text"
                   name="name"
                   placeholder="Full Name"
+                  value={values.name}
                   onChange={handleChange}
                 />
-                <span className="err-msg" ref={errMsg}>
-                  {errors.name}
-                </span>
                 <input
                   type="email"
                   name="email"
                   placeholder="Email"
+                  value={values.email}
                   onChange={handleChange}
                 />
-                <span className="err-msg" ref={errMsg}>
-                  {errors.email}
-                </span>
                 <textarea
                   name="msg"
                   placeholder="Message"
+                  value={values.msg}
                   onChange={handleChange}
                   className="msg"
                 />
-                <span className="err-msg" ref={errMsg}>
-                  {errors.msg}
-                </span>
                 <button type="submit" name="submit" className="btn-primary">
                   Send Now
                 </button>
@@ -72,6 +74,7 @@ const Contact = () => {
           </Formik>
         </div>
       </div>
+      <ToastContainer delay={2000} position="bottom-right" />
     </div>
   );
 };
