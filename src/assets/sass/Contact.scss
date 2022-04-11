@@ -1,0 +1,101 @@
+@use "./global";
+
+.contact-container {
+  margin-top: 80px;
+  position: relative;
+
+  .img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -99;
+    .bg-img {
+      background: url("../images/contact.jpg") center/cover;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      z-index: -99;
+      &::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: global.$primary-color;
+        opacity: 0.6;
+        position: absolute;
+        z-index: -1;
+      }
+    }
+  }
+
+  .contact {
+    height: 100vh;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .text {
+      margin: 2rem;
+      font-size: 40px;
+      max-width: 50%;
+      text-transform: uppercase;
+      color: global.$light-color;
+      font-weight: 700;
+    }
+
+    .form-container {
+      background-color: global.$light-color;
+      margin: 1rem;
+      max-width: 50%;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0.9;
+      position: relative;
+
+      form {
+        width: 70%;
+        margin: 0 auto;
+        font-family: inherit;
+        font-size: 18px;
+
+        input {
+          width: 100%;
+          margin-bottom: 8px;
+          padding: 10px 5px;
+          outline: none;
+          border: 1px solid global.$primary-color;
+        }
+
+        .msg {
+          height: 100px;
+          width: 100%;
+          padding: 5px;
+          outline: none;
+          margin-bottom: 0.5rem;
+          resize: none;
+        }
+
+        .btn-primary {
+          @include global.btnPrimary;
+          width: 103%;
+          box-shadow: 0px 3px 15px rgba($color: #000000, $alpha: 0.2);
+        }
+
+        .err-msg {
+          color: global.$warning-color;
+          font-size: 14px;
+          letter-spacing: 0.8px;
+          position: absolute;
+          top: 40px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}

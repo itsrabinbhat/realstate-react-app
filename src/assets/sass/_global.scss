@@ -1,6 +1,7 @@
 $primary-color: #314c62;
 $light-color: #f7f7f7;
 $shadow-color: #314c6225;
+$warning-color: rgb(253, 188, 67);
 
 @mixin btnPrimary($bg: $primary-color, $text: $light-color) {
   padding: 10px 20px;
