@@ -31,6 +31,24 @@ body {
   color: #314c62;
   margin-right: 30px;
   font-weight: 500;
+  padding: 5px 0;
+  position: relative;
+}
+.nav-container .navbar a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #314c62;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  transform-origin: left;
+  transform: scale(0);
+  transition: transform 0.3s ease-in;
+}
+.nav-container .navbar a:hover:after {
+  transform: scale(1);
 }
 .nav-container .navbar .user-login {
   position: absolute;

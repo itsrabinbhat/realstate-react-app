@@ -40,7 +40,7 @@ const Contact = () => {
                     toast.warn(errors.email);
                   } else if (errors.msg) {
                     toast.warn(errors.msg);
-                  } else {
+                  } else if (errors && values.name !== "") {
                     toast.success("Thank you for contacting us!");
                   }
                 }}

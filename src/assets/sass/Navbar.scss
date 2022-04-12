@@ -34,6 +34,28 @@ body {
       color: global.$primary-color;
       margin-right: 30px;
       font-weight: 500;
+      padding: 5px 0;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: global.$primary-color;
+        left: 0;
+        bottom: 0;
+        z-index: 99;
+        transform-origin: left;
+        transform: scale(0);
+        transition: transform 0.3s ease-in;
+      }
+
+      &:hover {
+        &:after {
+          transform: scale(1);
+        }
+      }
     }
 
     .user-login {
