@@ -1,8 +1,9 @@
 @use "./global";
 @use "./header";
 
-.main {
+.rent-home {
   width: 1100px;
+  margin: 0 auto;
   margin-bottom: 2rem;
 
   @include header.header($url: "../images/rent-home.jpg");

@@ -1,17 +1,18 @@
-.main {
+.rent-home {
   width: 1100px;
+  margin: 0 auto;
   margin-bottom: 2rem;
 }
-.main .header {
+.rent-home .header {
   display: flex;
   justify-content: space-between;
   height: 400px;
 }
-.main .header .img-container {
+.rent-home .header .img-container {
   flex: 5;
   background: url("../images/rent-home.jpg") center/cover;
 }
-.main .header .desc-container {
+.rent-home .header .desc-container {
   flex: 4;
   background-color: #314c62;
   color: #f7f7f7;
@@ -19,22 +20,22 @@
   justify-content: center;
   align-items: center;
 }
-.main .header .desc-container .desc {
+.rent-home .header .desc-container .desc {
   max-width: 80%;
 }
-.main .header .desc-container .desc .head {
-  font-size: 18;
+.rent-home .header .desc-container .desc .head {
+  font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   opacity: 0.9;
 }
-.main .header .desc-container .desc .title {
-  font-size: 40px;
+.rent-home .header .desc-container .desc .title {
+  font-size: 36px;
   font-weight: bold;
   text-transform: uppercase;
   margin: 12px 0;
 }
-.main .header .desc-container .desc .sub {
+.rent-home .header .desc-container .desc .sub {
   font-size: 18;
   font-weight: 500;
   text-transform: capitalize;

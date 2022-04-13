@@ -1,9 +1,11 @@
 import React from "react";
 import "../assets/css/BuyHome.css";
+import { useGetPropertiesQuery } from "../services/api";
 
 const BuyHome = () => {
+  // const { data, isFetching } = useGetPropertiesQuery("for-sale");
   return (
-    <div className="main">
+    <div className="buy-home">
       <div className="header">
         <div className="img-container"></div>
         <div className="desc-container">
@@ -14,6 +16,8 @@ const BuyHome = () => {
           </div>
         </div>
       </div>
+
+      <div className="main"></div>
     </div>
   );
 };

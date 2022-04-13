@@ -23,7 +23,9 @@ const Footer = () => {
 
           <div className="nav-links">
             {footerNav?.map(({ name, link }, idx) => (
-              <Link to={link}>{name}</Link>
+              <Link to={link} key={idx}>
+                {name}
+              </Link>
             ))}
           </div>
         </div>

@@ -3,7 +3,7 @@ import "../assets/css/RentHome.css";
 
 const RentHome = () => {
   return (
-    <div className="main">
+    <div className="rent-home">
       <div className="header">
         <div className="img-container"></div>
         <div className="desc-container">
