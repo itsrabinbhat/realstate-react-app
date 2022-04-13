@@ -6,7 +6,6 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", link: "" },
     { name: "About", link: "about-us" },
-    { name: "Services", link: "services" },
     { name: "Contact", link: "contact-us" },
   ];
   return (
@@ -19,6 +18,14 @@ const Navbar = () => {
               {item.name}
             </Link>
           ))}
+
+          <div className="services">
+            <p className="dropdown">Services</p>
+            <div className="dropdown-content">
+              <Link to="/buy-home">Buy A Home</Link>
+              <Link to="/rent-home">Rent A Home</Link>
+            </div>
+          </div>
         </div>
         <div className="user-login">
           <Link to="/login">Log in</Link>

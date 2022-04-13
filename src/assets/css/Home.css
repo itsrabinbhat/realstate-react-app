@@ -29,6 +29,9 @@
   font-size: 18px;
   margin-bottom: 2rem;
 }
+.main .showcase-container .showcase-content .btn-container a {
+  text-decoration: none;
+}
 .main .showcase-container .showcase-content .btn-primary {
   padding: 10px 20px;
   border: none;
@@ -156,7 +159,7 @@
   transform: scale(0.98);
 }
 .main .review-container {
-  margin-top: 80px;
+  margin: 80px 0;
 }
 .main .review-container .head {
   display: flex;

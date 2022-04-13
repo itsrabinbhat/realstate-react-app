@@ -1,0 +1,47 @@
+@use "./global";
+
+@mixin header($url) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+
+    .img-container {
+      flex: 5;
+      background: url($url) center/cover;
+    }
+
+    .desc-container {
+      flex: 4;
+      background-color: global.$primary-color;
+      color: global.$light-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .desc {
+        max-width: 80%;
+
+        .head {
+          font-size: 18;
+          font-weight: bold;
+          text-transform: uppercase;
+          opacity: 0.9;
+        }
+
+        .title {
+          font-size: 40px;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin: 12px 0;
+        }
+
+        .sub {
+          font-size: 18;
+          font-weight: 500;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
