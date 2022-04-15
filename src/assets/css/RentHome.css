@@ -40,3 +40,81 @@
   font-weight: 500;
   text-transform: capitalize;
 }
+.rent-home .main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+  gap: 50px;
+}
+.rent-home .main a {
+  text-decoration: none;
+  color: #314c62;
+}
+.rent-home .main .card {
+  background-color: #fff;
+  max-width: 333px;
+  height: 400px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.rent-home .main .card img {
+  height: 200px;
+  width: 333px;
+  object-fit: cover;
+}
+.rent-home .main .card .content {
+  padding: 5px 12px;
+}
+.rent-home .main .card .content .title {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.rent-home .main .card .content .desc1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.rent-home .main .card .content .desc1 .price {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.rent-home .main .card .content .desc1 .agency-logo {
+  max-width: 100px;
+}
+.rent-home .main .card .content .desc1 .agency-logo img {
+  height: 40px;
+  width: 100%;
+}
+.rent-home .main .card .content .icons {
+  padding-bottom: 8px;
+  font-size: 18px;
+}
+.rent-home .main .card .content .desc2 {
+  line-height: 1.3;
+  font-size: 14px;
+}
+.rent-home .main .card:hover {
+  box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.2);
+}
+.rent-home .badge {
+  height: 1.5rem !important;
+  width: 1.5rem !important;
+  margin-right: 8px;
+  color: rgb(73, 226, 142);
+}
+.rent-home .icons {
+  font-size: 14px;
+  color: #314c62;
+}
+.rent-home .icons .icon {
+  margin-left: 8px;
+}
+.rent-home .icons > :first-child {
+  margin-bottom: -3px;
+}

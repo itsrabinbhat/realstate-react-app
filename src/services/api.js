@@ -15,7 +15,7 @@ export const realstateApi = createApi({
     getProperties: builder.query({
       query: (purpose) =>
         createRequest(
-          `/properties/list?locationExternalIDs=5002&purpose=${purpose}&hitsPerPage=10`
+          `/properties/list?locationExternalIDs=5002&purpose=${purpose}&hitsPerPage=12`
         ),
     }),
   }),

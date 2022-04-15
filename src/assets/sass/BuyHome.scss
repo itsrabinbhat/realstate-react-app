@@ -1,6 +1,5 @@
-@use "./global";
 @use "./header";
-@use "./card";
+@use "./main";
 
 .buy-home {
   max-width: 1100px;
@@ -8,18 +7,5 @@
 
   @include header.header($url: "../images/buy-home.jpg");
 
-  .main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 50px auto;
-    gap: 50px;
-
-    a {
-      text-decoration: none;
-      color: global.$primary-color;
-    }
-
-    @include card.card;
-  }
+  @include main.main;
 }
