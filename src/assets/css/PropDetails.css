@@ -1,0 +1,63 @@
+.prop-detail {
+  width: min(90%, 1100px);
+  margin-inline: auto;
+}
+.prop-detail .carousel {
+  height: 100%;
+  width: min(100%, 1100px);
+  z-index: 1 !important;
+}
+.prop-detail .carousel .slider-wrapper {
+  height: 75vh;
+  z-index: 1 !important;
+}
+.prop-detail .main h3 {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.prop-detail .main small {
+  font-weight: 600;
+  opacity: 0.8;
+}
+.prop-detail .main .prop-desc {
+  display: flex;
+  justify-content: space-between;
+  color: #314c62;
+}
+.prop-detail .main .prop-desc .left {
+  width: min(90%, 800px);
+}
+.prop-detail .main .prop-desc .left .highlights {
+  display: flex;
+  margin: 1rem 0;
+}
+.prop-detail .main .prop-desc .left .highlights .highlight {
+  margin-right: 30px;
+}
+.prop-detail .main .prop-desc .left .highlights .highlight .title {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.prop-detail .main .prop-desc .left .desc {
+  line-height: 1.5;
+}
+.prop-detail .main .prop-desc .left .desc b {
+  display: block;
+  margin: 1rem 0;
+}
+.prop-detail .main .prop-desc .right {
+  width: min(90%, 200px);
+}
+.prop-detail .main .prop-desc .right .title {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+.prop-detail .main .prop-desc .right ul {
+  margin-left: 1.5rem;
+}
+.prop-detail .main .prop-desc .right ul li {
+  margin-bottom: 5px;
+}

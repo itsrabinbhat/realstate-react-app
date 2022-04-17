@@ -28,7 +28,7 @@ const RentHome = () => {
         {isFetching
           ? "Loading..."
           : data?.hits?.map((item) => (
-              <Link to={`/rent-home/${item.id}`} key={item.id}>
+              <Link to={`/rent-home/${item.externalID}`} key={item.id}>
                 <div className="card">
                   <div className="card-img">
                     <img src={item.coverPhoto?.url || imgUrl} alt="img" />

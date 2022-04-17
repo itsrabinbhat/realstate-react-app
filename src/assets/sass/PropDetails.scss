@@ -1,0 +1,76 @@
+@use "./global";
+
+.prop-detail {
+  width: min(90%, 1100px);
+  margin-inline: auto;
+
+  .carousel {
+    height: 100%;
+    width: min(100%, 1100px);
+    z-index: 1 !important;
+
+    .slider-wrapper {
+      height: 75vh;
+      z-index: 1 !important;
+    }
+  }
+  .main {
+    h3 {
+      font-size: 28px;
+      text-transform: uppercase;
+    }
+    small {
+      font-weight: 600;
+      opacity: 0.8;
+    }
+
+    .prop-desc {
+      display: flex;
+      justify-content: space-between;
+      color: global.$primary-color;
+
+      .left {
+        width: min(90%, 800px);
+        .highlights {
+          display: flex;
+          margin: 1rem 0;
+          .highlight {
+            margin-right: 30px;
+
+            .title {
+              font-size: 16px;
+              text-transform: uppercase;
+              font-weight: 600;
+            }
+          }
+        }
+        .desc {
+          line-height: 1.5;
+
+          b {
+            display: block;
+            margin: 1rem 0;
+          }
+        }
+      }
+      .right {
+        width: min(90%, 200px);
+
+        .title {
+          font-size: 16px;
+          font-weight: 600;
+          text-transform: uppercase;
+          margin: 1rem 0;
+        }
+
+        ul {
+          margin-left: 1.5rem;
+
+          li {
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}

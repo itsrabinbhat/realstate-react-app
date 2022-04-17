@@ -1,5 +1,5 @@
 .rent-home {
-  width: 1100px;
+  width: min(90%, 1100px);
   margin: 0 auto;
   margin-bottom: 2rem;
 }

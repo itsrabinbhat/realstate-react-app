@@ -14,7 +14,7 @@ body {
   font-size: 16px;
 
   .navbar {
-    width: 1100px;
+    width: min(90%, 1100px);
     display: flex;
     align-items: center;
     position: relative;
@@ -60,10 +60,16 @@ body {
     .services {
       position: relative;
 
+      .down-icon {
+        color: global.$primary-color;
+        margin-bottom: -3px;
+        opacity: 0.8;
+      }
+
       .dropdown {
         color: global.$primary-color;
         font-weight: 500;
-        padding: 5px 0;
+        padding: 6px 0;
         position: relative;
         cursor: pointer;
 
@@ -75,7 +81,7 @@ body {
           background-color: global.$primary-color;
           left: 0;
           bottom: 0;
-          z-index: 99;
+          z-index: 99 !important;
           transform-origin: left;
           transform: scale(0);
           transition: transform 0.3s ease-in;
@@ -100,6 +106,7 @@ body {
         left: 0;
         top: 30px;
         transition: opacity 0.3s ease-in;
+        z-index: 99 !important;
 
         a {
           display: inline-block;

@@ -8,7 +8,7 @@ import millify from "millify";
 
 const BuyHome = () => {
   const { data, isFetching } = useGetPropertiesQuery("for-sale");
-  console.log(data?.hits[0]);
+  console.log(data?.hits);
   const imgUrl =
     "https://images.unsplash.com/photo-1615529182904-14819c35db37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80";
 
@@ -29,7 +29,7 @@ const BuyHome = () => {
         {isFetching
           ? "Loading..."
           : data?.hits?.map((item) => (
-              <Link to={`/buy-home/${item.id}`} key={item.id}>
+              <Link to={`/buy-home/${item.externalID}`} key={item.id}>
                 <div className="card">
                   <div className="card-img">
                     <img src={item.coverPhoto?.url || imgUrl} alt="img" />

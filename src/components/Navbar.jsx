@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../assets/css/Navbar.css";
+import { FaCaretDown } from "react-icons/fa";
 
 const Navbar = () => {
   const navItems = [
@@ -20,7 +21,9 @@ const Navbar = () => {
           ))}
 
           <div className="services">
-            <p className="dropdown">Services</p>
+            <p className="dropdown">
+              Services <FaCaretDown className="down-icon" />
+            </p>
             <div className="dropdown-content">
               <Link to="/buy-home">Buy A Home</Link>
               <Link to="/rent-home">Rent A Home</Link>
