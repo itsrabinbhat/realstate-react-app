@@ -3,7 +3,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import "../assets/css/Home.css";
 import { Link } from "react-router-dom";
-import Contact from "./Contact";
+import Contact from "../components/Contact";
 
 const Home = () => {
   const stats = [

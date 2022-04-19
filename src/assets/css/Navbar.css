@@ -118,3 +118,8 @@ body {
 .nav-container .btn:active {
   transform: scale(0.98);
 }
+.nav-container .btn a {
+  color: #f7f7f7;
+  text-decoration: none;
+  margin-inline: auto;
+}

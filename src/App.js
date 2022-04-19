@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
+import Home from "./pages/Home";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import About from "./components/About";

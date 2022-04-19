@@ -127,5 +127,11 @@ body {
 
   .btn {
     @include global.btnPrimary;
+
+    a {
+      color: global.$light-color;
+      text-decoration: none;
+      margin-inline: auto;
+    }
   }
 }
