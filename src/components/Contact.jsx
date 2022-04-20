@@ -16,8 +16,14 @@ const Contact = () => {
         <div className="bg-img"></div>
       </div>
       <div className="contact">
-        <div className="text">
-          Need a consultaion? contact us & we will help you.
+        <div className="text-container">
+          <p className="text">Need a consultaion?</p>
+          <p>
+            <strong>Contact us & we will help you.</strong> Autem voluptatum
+            praesentium officia eaque aperiam doloremque obcaecati eveniet iusto
+            aspernatur repudiandae. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quod, vitae!
+          </p>
         </div>
         <div className="form-container">
           <Formik

@@ -64,6 +64,7 @@ body {
         color: global.$primary-color;
         margin-bottom: -3px;
         opacity: 0.8;
+        transition: 0.3s ease-in;
       }
 
       .dropdown {
@@ -90,6 +91,10 @@ body {
         &:hover {
           &:after {
             transform: scale(1);
+          }
+
+          .down-icon {
+            transform: rotate(180deg);
           }
         }
       }

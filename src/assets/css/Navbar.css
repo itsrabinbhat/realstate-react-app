@@ -57,6 +57,7 @@ body {
   color: #314c62;
   margin-bottom: -3px;
   opacity: 0.8;
+  transition: 0.3s ease-in;
 }
 .nav-container .navbar .services .dropdown {
   color: #314c62;
@@ -80,6 +81,9 @@ body {
 }
 .nav-container .navbar .services .dropdown:hover:after {
   transform: scale(1);
+}
+.nav-container .navbar .services .dropdown:hover .down-icon {
+  transform: rotate(180deg);
 }
 .nav-container .navbar .services .dropdown-content {
   display: none !important;

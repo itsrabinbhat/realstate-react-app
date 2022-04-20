@@ -21,7 +21,7 @@
   height: 100%;
   width: 100%;
   background-color: #314c62;
-  opacity: 0.6;
+  opacity: 0.8;
   position: absolute;
   z-index: -1;
 }
@@ -33,13 +33,20 @@
   justify-content: space-between;
   align-items: center;
 }
-.contact-container .contact .text {
-  margin: 2rem;
-  font-size: 40px;
+.contact-container .contact .text-container {
   max-width: 50%;
-  text-transform: uppercase;
+  margin: 1rem;
   color: #f7f7f7;
+  line-height: 1.5;
+  font-size: 18px;
+}
+.contact-container .contact .text-container .text {
+  line-height: 1;
+  font-size: 40px;
+  max-width: 100%;
+  text-transform: uppercase;
   font-weight: 700;
+  margin-bottom: 8px;
 }
 .contact-container .contact .form-container {
   background-color: #f7f7f7;

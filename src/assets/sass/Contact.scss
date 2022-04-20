@@ -21,7 +21,7 @@
         height: 100%;
         width: 100%;
         background-color: global.$primary-color;
-        opacity: 0.6;
+        opacity: 0.8;
         position: absolute;
         z-index: -1;
       }
@@ -36,13 +36,20 @@
     justify-content: space-between;
     align-items: center;
 
-    .text {
-      margin: 2rem;
-      font-size: 40px;
+    .text-container {
       max-width: 50%;
-      text-transform: uppercase;
+      margin: 1rem;
       color: global.$light-color;
-      font-weight: 700;
+      line-height: 1.5;
+      font-size: 18px;
+      .text {
+        line-height: 1;
+        font-size: 40px;
+        max-width: 100%;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
     }
 
     .form-container {

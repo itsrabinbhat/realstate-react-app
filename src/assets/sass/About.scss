@@ -1,0 +1,22 @@
+@use "./global";
+.about-us {
+  width: min(90%, 1100px);
+  height: 100vh;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: global.$primary-color;
+
+  img {
+    width: 400px;
+  }
+
+  .desc {
+    margin-left: 30px;
+    line-height: 1.6;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+}
