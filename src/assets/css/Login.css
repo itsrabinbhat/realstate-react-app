@@ -46,4 +46,130 @@
 .login .form-container {
   background-color: #314c62;
   flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.login .form-container .title {
+  color: #f7f7f7;
+  opacity: 0.6;
+  position: absolute;
+  top: 50px;
+}
+.login .form-container .title .icon {
+  color: #f7f7f7;
+  margin-bottom: -2px;
+  margin-right: 5px;
+}
+.login .form-container .form {
+  width: min(90%, 400px);
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login .form-container .form form {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login .form-container .form form input {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 10px 5px;
+  outline: none;
+}
+.login .form-container .form form .btn-primary {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f7f7f7;
+  color: #314c62;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  width: 103%;
+  margin-top: 8px;
+}
+.login .form-container .form form .btn-primary:hover {
+  opacity: 0.9;
+}
+.login .form-container .form form .btn-primary:active {
+  transform: scale(0.98);
+}
+.login .form-container .form .forgot {
+  color: #f7f7f7;
+  text-decoration: none;
+  opacity: 0.9;
+}
+.login .form-container .form .or {
+  margin-top: 1rem;
+  color: #f7f7f7;
+  text-transform: uppercase;
+}
+.login .form-container .form .btn-google {
+  padding: 10px 20px;
+  border: none;
+  background-color: #db4437;
+  color: #f7f7f7;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin-top: 1rem;
+  width: min(90%, 400px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.login .form-container .form .btn-google:hover {
+  opacity: 0.9;
+}
+.login .form-container .form .btn-google:active {
+  transform: scale(0.98);
+}
+.login .form-container .form .btn-google .icon {
+  background-color: #f7f7f7;
+  color: #db4437;
+  padding: 5px;
+  border-radius: 50%;
+  position: absolute;
+  left: 1rem;
+}
+.login .form-container .form .btn-facebook {
+  padding: 10px 20px;
+  border: none;
+  background-color: #699bf7;
+  color: #f7f7f7;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin-top: 8px;
+  width: min(90%, 400px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.login .form-container .form .btn-facebook:hover {
+  opacity: 0.9;
+}
+.login .form-container .form .btn-facebook:active {
+  transform: scale(0.98);
+}
+.login .form-container .form .btn-facebook .icon {
+  background-color: #f7f7f7;
+  color: #699bf7;
+  padding: 5px;
+  border-radius: 50%;
+  position: absolute;
+  left: 1rem;
 }

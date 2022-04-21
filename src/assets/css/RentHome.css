@@ -53,7 +53,7 @@
 }
 .rent-home .main .card {
   background-color: #fff;
-  max-width: 333px;
+  max-width: 333px !important;
   height: 400px;
   cursor: pointer;
   transition: 0.3s ease-in;

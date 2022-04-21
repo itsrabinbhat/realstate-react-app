@@ -53,5 +53,110 @@
   .form-container {
     background-color: global.$primary-color;
     flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .title {
+      color: global.$light-color;
+      opacity: 0.6;
+      position: absolute;
+      top: 50px;
+      .icon {
+        color: global.$light-color;
+        margin-bottom: -2px;
+        margin-right: 5px;
+      }
+    }
+
+    .form {
+      width: min(90%, 400px);
+      padding: 1rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      form {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        font-family: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+          width: 100%;
+          margin-bottom: 8px;
+          padding: 10px 5px;
+          outline: none;
+        }
+
+        .btn-primary {
+          @include global.btnPrimary(
+            $bg: global.$light-color,
+            $text: global.$primary-color
+          );
+
+          width: 103%;
+          margin-top: 8px;
+        }
+      }
+
+      .forgot {
+        color: global.$light-color;
+        text-decoration: none;
+        opacity: 0.9;
+      }
+
+      .or {
+        margin-top: 1rem;
+        color: global.$light-color;
+        text-transform: uppercase;
+      }
+
+      .btn-google {
+        @include global.btnPrimary($bg: #db4437, $text: global.$light-color);
+        display: block;
+        margin-top: 1rem;
+        width: min(90%, 400px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .icon {
+          background-color: global.$light-color;
+          color: #db4437;
+          padding: 5px;
+          border-radius: 50%;
+          position: absolute;
+          left: 1rem;
+        }
+      }
+
+      .btn-facebook {
+        @include global.btnPrimary($bg: #699bf7, $text: global.$light-color);
+        display: block;
+        margin-top: 8px;
+        width: min(90%, 400px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .icon {
+          background-color: global.$light-color;
+          color: #699bf7;
+          padding: 5px;
+          border-radius: 50%;
+          position: absolute;
+          left: 1rem;
+        }
+      }
+    }
   }
 }

@@ -108,22 +108,23 @@ body {
   position: absolute;
   right: 0;
 }
-.nav-container .btn {
+.nav-container .signup {
+  color: #f7f7f7;
+  text-decoration: none;
+  margin-right: 0 !important;
+}
+.nav-container .signup .btn {
   padding: 10px 20px;
   border: none;
   background-color: #314c62;
   color: #f7f7f7;
   font-size: 16px;
   cursor: pointer;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
 }
-.nav-container .btn:hover {
+.nav-container .signup .btn:hover {
   opacity: 0.9;
 }
-.nav-container .btn:active {
+.nav-container .signup .btn:active {
   transform: scale(0.98);
-}
-.nav-container .btn a {
-  color: #f7f7f7;
-  text-decoration: none;
-  margin-inline: auto;
 }

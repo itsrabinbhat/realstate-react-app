@@ -1,15 +1,10 @@
 import { Formik } from "formik";
 import React from "react";
-import { object, string } from "yup";
+import { contactValidation } from "../services/valSchema";
 import { ToastContainer, toast } from "react-toast";
 import "../assets/css/Contact.css";
 
 const Contact = () => {
-  const contactValidation = object({
-    name: string().required("All fields are required!"),
-    email: string().email().required("All fields are required!"),
-    msg: string().required("All fields are required!"),
-  });
   return (
     <div className="contact-container">
       <div className="img-container">

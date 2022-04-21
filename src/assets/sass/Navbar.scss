@@ -130,13 +130,13 @@ body {
     }
   }
 
-  .btn {
-    @include global.btnPrimary;
+  .signup {
+    color: global.$light-color;
+    text-decoration: none;
+    margin-right: 0 !important;
 
-    a {
-      color: global.$light-color;
-      text-decoration: none;
-      margin-inline: auto;
+    .btn {
+      @include global.btnPrimary;
     }
   }
 }

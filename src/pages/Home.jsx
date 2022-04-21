@@ -12,7 +12,7 @@ const Home = () => {
     { title: "16", desc: "Awards gained." },
   ];
   return (
-    <>
+    <div className="home">
       <div className="main">
         <div className="showcase-container">
           <div className="showcase-content">
@@ -125,7 +125,7 @@ const Home = () => {
         </div>
       </div>
       <Contact />
-    </>
+    </div>
   );
 };
 
