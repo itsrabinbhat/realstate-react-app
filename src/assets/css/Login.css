@@ -1,6 +1,6 @@
 .login {
   width: min(90%, 1100px);
-  min-height: calc(100vh - 75px);
+  height: 100vh;
   margin-inline: auto;
   margin-bottom: 50px;
   display: flex;
@@ -178,6 +178,7 @@
   .login {
     flex-direction: column;
     text-align: center;
+    justify-content: center;
   }
   .login .img-container {
     flex: 2;
@@ -190,14 +191,10 @@
     font-size: 24px;
   }
   .login .form-container {
-    margin-top: -1rem !important;
     flex: 8;
   }
   .login .form-container .title {
     top: 20px;
-  }
-  .login .form-container form {
-    margin-top: 2rem !important;
   }
   .login .form-container .forgot {
     font-size: 14px;

@@ -24,6 +24,7 @@
 @media (max-width: 800px) {
   .about-us {
     flex-direction: column;
+    justify-content: center;
 
     .desc {
       margin: 2rem 0;
