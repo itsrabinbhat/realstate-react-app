@@ -2,6 +2,7 @@
 
 @mixin main {
   .main {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -14,14 +15,14 @@
     }
     .card {
       background-color: #fff;
-      max-width: 333px !important;
+      max-width: 333px;
       height: 400px;
       cursor: pointer;
       transition: 0.3s ease-in;
 
       img {
         height: 200px;
-        width: 333px;
+        width: 100%;
         object-fit: cover;
       }
 
@@ -89,6 +90,43 @@
 
     & > :first-child {
       margin-bottom: -3px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  a {
+    width: 45%;
+    .card {
+      height: 350px !important;
+      img {
+        height: 150px !important;
+      }
+      .agency-logo {
+        max-width: 60px !important;
+        img {
+          height: 30px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  a {
+    width: 100%;
+    .card {
+      max-width: 100% !important;
+      height: 400px !important;
+
+      img {
+        height: 220px !important;
+      }
+      .agency-logo {
+        max-width: 150px !important;
+        img {
+          height: 40px !important;
+        }
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 @use "./global";
 .footer-container {
-  height: 25vh;
+  // min-height: 25vh;
   background-color: global.$primary-color;
   color: global.$light-color;
 
@@ -75,6 +75,18 @@
       font-size: 16px;
       opacity: 0.7;
       text-align: center;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    .links {
+      flex-direction: column;
+
+      .title {
+        margin-bottom: 1rem;
+      }
     }
   }
 }

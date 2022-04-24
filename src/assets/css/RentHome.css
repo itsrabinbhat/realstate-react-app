@@ -1,3 +1,38 @@
+@media (max-width: 800px) {
+  a {
+    width: 45%;
+  }
+  a .card {
+    height: 350px !important;
+  }
+  a .card img {
+    height: 150px !important;
+  }
+  a .card .agency-logo {
+    max-width: 60px !important;
+  }
+  a .card .agency-logo img {
+    height: 30px !important;
+  }
+}
+@media (max-width: 600px) {
+  a {
+    width: 100%;
+  }
+  a .card {
+    max-width: 100% !important;
+    height: 400px !important;
+  }
+  a .card img {
+    height: 220px !important;
+  }
+  a .card .agency-logo {
+    max-width: 150px !important;
+  }
+  a .card .agency-logo img {
+    height: 40px !important;
+  }
+}
 .rent-home {
   width: min(90%, 1100px);
   margin: 0 auto;
@@ -5,8 +40,8 @@
 }
 .rent-home .header {
   display: flex;
-  justify-content: space-between;
   height: 400px;
+  transition: 0.3s ease-in;
 }
 .rent-home .header .img-container {
   flex: 5;
@@ -36,11 +71,43 @@
   margin: 12px 0;
 }
 .rent-home .header .desc-container .desc .sub {
-  font-size: 18;
   font-weight: 500;
   text-transform: capitalize;
 }
+@media (max-width: 750px) {
+  .rent-home .header {
+    height: 350px;
+  }
+  .rent-home .header .desc-container .desc .head {
+    font-size: 16px;
+  }
+  .rent-home .header .desc-container .desc .title {
+    font-size: 27px;
+  }
+}
+@media (max-width: 600px) {
+  .rent-home .header {
+    height: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .rent-home .header {
+    position: relative;
+  }
+  .rent-home .header .img-container {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  .rent-home .header .desc-container {
+    background-color: rgba(49, 76, 98, 0.7);
+  }
+}
 .rent-home .main {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -53,14 +120,14 @@
 }
 .rent-home .main .card {
   background-color: #fff;
-  max-width: 333px !important;
+  max-width: 333px;
   height: 400px;
   cursor: pointer;
   transition: 0.3s ease-in;
 }
 .rent-home .main .card img {
   height: 200px;
-  width: 333px;
+  width: 100%;
   object-fit: cover;
 }
 .rent-home .main .card .content {

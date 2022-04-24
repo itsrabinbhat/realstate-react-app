@@ -1,7 +1,7 @@
 @use "./global";
 .about-us {
   width: min(90%, 1100px);
-  height: 100vh;
+  min-height: 100vh;
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
@@ -9,7 +9,7 @@
   color: global.$primary-color;
 
   img {
-    width: 400px;
+    max-width: 400px;
   }
 
   .desc {
@@ -18,5 +18,15 @@
   }
   p {
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-us {
+    flex-direction: column;
+
+    .desc {
+      margin: 2rem 0;
+    }
   }
 }

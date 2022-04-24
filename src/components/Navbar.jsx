@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../assets/css/Navbar.css";
 import { FaCaretDown, FaBars } from "react-icons/fa";
-import { FemaleSharp } from "@mui/icons-material";
+import { FaHome } from "react-icons/fa";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -29,7 +29,12 @@ const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="navbar">
-        <div className="logo">Realtor</div>
+        <div className="logo">
+          <Link to="/">
+            <FaHome className="icon" />
+            Realtor
+          </Link>
+        </div>
         {showNav && (
           <div className="nav-links-container">
             <div className="nav-links">

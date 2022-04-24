@@ -21,7 +21,17 @@ body {
 .nav-container .navbar .logo {
   font-size: 18px;
   font-weight: bold;
-  margin-right: 60px;
+  margin-right: 50px;
+  min-width: 120px;
+}
+.nav-container .navbar .logo a {
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.9;
+}
+.nav-container .navbar .logo .icon {
+  margin-right: 5px;
+  margin-bottom: -2px;
 }
 .nav-container .navbar .nav-links-container {
   width: 100%;

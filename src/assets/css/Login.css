@@ -1,6 +1,6 @@
 .login {
   width: min(90%, 1100px);
-  height: calc(100vh - 75px);
+  min-height: calc(100vh - 75px);
   margin-inline: auto;
   margin-bottom: 50px;
   display: flex;
@@ -172,4 +172,34 @@
   border-radius: 50%;
   position: absolute;
   left: 1rem;
+}
+
+@media (max-width: 800px) {
+  .login {
+    flex-direction: column;
+    text-align: center;
+  }
+  .login .img-container {
+    flex: 2;
+  }
+  .login .img-container .img .text {
+    padding: 2rem 1rem;
+  }
+  .login .img-container .img .text .title {
+    margin-top: 8px;
+    font-size: 24px;
+  }
+  .login .form-container {
+    margin-top: -1rem !important;
+    flex: 8;
+  }
+  .login .form-container .title {
+    top: 20px;
+  }
+  .login .form-container form {
+    margin-top: 2rem !important;
+  }
+  .login .form-container .forgot {
+    font-size: 14px;
+  }
 }
