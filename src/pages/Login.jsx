@@ -4,7 +4,9 @@ import { loginValidation } from "../services/valSchema";
 import { FaGoogle, FaFacebookF, FaHome } from "react-icons/fa";
 import "../assets/css/Login.css";
 import { Link } from "react-router-dom";
+import { useTitle } from "../hooks/useTitle";
 const Login = () => {
+  useTitle("Log in | Realtor");
   return (
     <div className="login">
       <div className="img-container">

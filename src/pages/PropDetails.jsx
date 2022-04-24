@@ -7,8 +7,10 @@ import millify from "millify";
 import HTMLReactParser from "html-react-parser";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../assets/css/PropDetails.css";
+import { useTitle } from "../hooks/useTitle";
 
 const PropDetails = () => {
+  useTitle("Property Details | Realtor");
   const { propID } = useParams();
   const { data, isFetching } = useGetPropDetailsQuery(propID);
 

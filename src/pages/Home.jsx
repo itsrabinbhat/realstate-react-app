@@ -4,8 +4,10 @@ import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import "../assets/css/Home.css";
 import { Link } from "react-router-dom";
 import Contact from "../components/Contact";
+import { useTitle } from "../hooks/useTitle";
 
 const Home = () => {
+  useTitle("Home | Realtor");
   const stats = [
     { title: "10+", desc: "Years of experience." },
     { title: "1000", desc: "Satisfied customers." },
@@ -124,7 +126,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Contact />
+      <Contact fromHome />
     </div>
   );
 };

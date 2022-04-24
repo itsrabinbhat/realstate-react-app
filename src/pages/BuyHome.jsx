@@ -5,8 +5,10 @@ import { FaBed, FaBath } from "react-icons/fa";
 import { MdVerified } from "react-icons/md";
 import { BsFillGridFill } from "react-icons/bs";
 import millify from "millify";
+import { useTitle } from "../hooks/useTitle";
 
 const BuyHome = () => {
+  useTitle("Buy A Property | Realtor");
   const { data, isFetching } = useGetPropertiesQuery("for-sale");
   console.log(data?.hits);
   const imgUrl =

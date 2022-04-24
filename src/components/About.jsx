@@ -1,7 +1,9 @@
 import aboutImg from "../assets/images/about.svg";
 import "../assets/css/About.css";
+import { useTitle } from "../hooks/useTitle";
 
 const About = () => {
+  useTitle("About us | Realtor");
   return (
     <div className="about-us">
       <div className="about-img">

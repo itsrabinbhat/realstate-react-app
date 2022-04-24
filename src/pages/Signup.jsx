@@ -3,8 +3,10 @@ import { ToastContainer, toast } from "react-toast";
 import { signupValidation } from "../services/valSchema";
 import { FaGoogle, FaFacebookF, FaHome } from "react-icons/fa";
 import "../assets/css/Login.css";
+import { useTitle } from "../hooks/useTitle";
 
-const Login = () => {
+const Signup = () => {
+  useTitle("Sign up | Realtor");
   return (
     <div className="login">
       <div className="img-container">
@@ -84,4 +86,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;

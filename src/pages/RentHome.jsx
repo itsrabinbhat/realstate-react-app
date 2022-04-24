@@ -5,8 +5,10 @@ import { MdVerified } from "react-icons/md";
 import { BsFillGridFill } from "react-icons/bs";
 import millify from "millify";
 import "../assets/css/RentHome.css";
+import { useTitle } from "../hooks/useTitle";
 
 const RentHome = () => {
+  useTitle("Rent A Property | Realtor");
   const { data, isFetching } = useGetPropertiesQuery("for-rent");
   console.log(data?.hits[0]);
   const imgUrl =

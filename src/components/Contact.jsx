@@ -3,8 +3,12 @@ import React from "react";
 import { contactValidation } from "../services/valSchema";
 import { ToastContainer, toast } from "react-toast";
 import "../assets/css/Contact.css";
+import { useTitle } from "../hooks/useTitle";
 
-const Contact = () => {
+const Contact = ({ fromHome }) => {
+  var title = "";
+  fromHome ? (title = "Contact | Realtor") : (title = "Contact | Realtor");
+  useTitle(title);
   return (
     <div className="contact-container">
       <div className="img-container">
