@@ -31,7 +31,7 @@
       color: global.$primary-color;
 
       .left {
-        width: min(90%, 800px);
+        width: min(70%, 800px);
         .highlights {
           display: flex;
           margin: 1rem 0;
@@ -67,7 +67,7 @@
         }
       }
       .right {
-        width: min(90%, 200px);
+        width: min(30%, 200px);
 
         .title {
           font-size: 16px;
@@ -103,7 +103,7 @@
     }
 
     .left {
-      width: min(90%, 800px);
+      width: min(70%, 800px);
 
       img {
         object-fit: cover;
@@ -118,7 +118,7 @@
     }
 
     .right {
-      width: min(90%, 200px);
+      width: min(30%, 200px);
 
       .name {
         text-transform: capitalize;
@@ -145,6 +145,54 @@
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
         }
       }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .carousel {
+    .slider-wrapper {
+      height: 60vh !important;
+    }
+  }
+  .main {
+    h3 {
+      font-size: 24px !important;
+    }
+
+    .prop-desc {
+      .left {
+        .highlights {
+          flex-wrap: wrap;
+          .highlight {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .carousel {
+    .slider-wrapper {
+      height: 45vh !important;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    h3 {
+      font-size: 20px !important;
+    }
+  }
+  .prop-desc,
+  .seller-info {
+    flex-direction: column;
+
+    .left,
+    .right {
+      width: 100% !important;
     }
   }
 }

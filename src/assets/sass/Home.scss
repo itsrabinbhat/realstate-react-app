@@ -78,16 +78,17 @@
         text-transform: uppercase;
         font-size: 30px;
         font-weight: 500;
-        max-width: 636px;
+        max-width: 60%;
       }
 
       .stats {
         display: flex;
+        max-width: 40%;
         margin-right: -50px;
 
         .stat {
           max-width: 120px;
-          margin: 0 8px;
+          margin: 8px;
 
           .title {
             font-size: 28px;
@@ -238,14 +239,17 @@
         .heading {
           text-align: center;
           font-size: 24px;
-          max-width: 100%;
+          max-width: 100% !important;
         }
 
         .stats {
+          max-width: 100%;
           margin-top: 1rem;
+          flex-wrap: wrap;
+          margin-right: 0px;
 
           .stat {
-            margin: 0 8px;
+            margin: 8px;
 
             .title {
               font-size: 24px;
@@ -302,6 +306,28 @@
     }
 
     @media (max-width: 650px) {
+      .stats-container {
+        .heading {
+          font-size: 20px;
+        }
+
+        .stats {
+          justify-content: center;
+          text-align: center;
+
+          .stat {
+            margin: 8px;
+
+            .title {
+              font-size: 18px;
+            }
+
+            .desc {
+              font-size: 16px;
+            }
+          }
+        }
+      }
       .review-container {
         .head {
           justify-content: center;
@@ -353,8 +379,8 @@
         }
 
         .showcase-img {
-          width: 100%;
-          height: 100%;
+          width: 90%;
+          height: 90%;
           position: absolute;
           z-index: -99 !important;
           top: 0;

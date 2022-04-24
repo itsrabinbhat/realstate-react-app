@@ -26,7 +26,7 @@
   color: #314c62;
 }
 .prop-detail .main .prop-desc .left {
-  width: min(90%, 800px);
+  width: min(70%, 800px);
 }
 .prop-detail .main .prop-desc .left .highlights {
   display: flex;
@@ -58,7 +58,7 @@
   margin: 1rem 0;
 }
 .prop-detail .main .prop-desc .right {
-  width: min(90%, 200px);
+  width: min(30%, 200px);
 }
 .prop-detail .main .prop-desc .right .title {
   font-size: 16px;
@@ -86,7 +86,7 @@
   margin-bottom: 1rem;
 }
 .prop-detail .seller-info .left {
-  width: min(90%, 800px);
+  width: min(70%, 800px);
 }
 .prop-detail .seller-info .left img {
   object-fit: cover;
@@ -98,7 +98,7 @@
   line-height: 1.5;
 }
 .prop-detail .seller-info .right {
-  width: min(90%, 200px);
+  width: min(30%, 200px);
 }
 .prop-detail .seller-info .right .name {
   text-transform: capitalize;
@@ -121,4 +121,41 @@
 }
 .prop-detail .seller-info .right .contact:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 800px) {
+  .carousel .slider-wrapper {
+    height: 60vh !important;
+  }
+
+  .main h3 {
+    font-size: 24px !important;
+  }
+  .main .prop-desc .left .highlights {
+    flex-wrap: wrap;
+  }
+  .main .prop-desc .left .highlights .highlight {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .carousel .slider-wrapper {
+    height: 45vh !important;
+  }
+}
+@media (max-width: 500px) {
+  .main h3 {
+    font-size: 20px !important;
+  }
+
+  .prop-desc,
+.seller-info {
+    flex-direction: column;
+  }
+  .prop-desc .left,
+.prop-desc .right,
+.seller-info .left,
+.seller-info .right {
+    width: 100% !important;
+  }
 }

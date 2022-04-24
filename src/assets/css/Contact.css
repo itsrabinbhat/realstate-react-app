@@ -102,6 +102,7 @@
   .contact-container .contact {
     flex-direction: column;
     align-content: center;
+    justify-content: space-between;
   }
   .contact-container .contact .text-container {
     text-align: center;
