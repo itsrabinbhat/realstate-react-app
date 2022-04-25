@@ -157,6 +157,15 @@
           left: 1rem;
         }
       }
+
+      .signup-text {
+        margin-top: 1.5rem;
+        color: global.$light-color;
+
+        a {
+          color: inherit;
+        }
+      }
     }
   }
 }
@@ -170,9 +179,10 @@
     position: relative;
 
     .img-container {
-      flex: auto;
+      flex: 2;
 
       .img {
+        height: 200px;
         .text {
           padding: 0rem 1rem;
           .title {
@@ -185,11 +195,11 @@
 
     .form-container {
       position: initial;
-      flex: auto;
+      flex: 8;
       justify-content: flex-start;
 
       form {
-        margin-top: 1rem !important;
+        margin-top: 2rem !important;
       }
 
       .title {
@@ -197,7 +207,7 @@
         z-index: 99;
       }
       .forgot {
-        font-size: 14px;
+        font-size: 16px;
       }
     }
   }

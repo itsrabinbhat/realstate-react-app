@@ -73,6 +73,9 @@ const Login = () => {
                 <FaFacebookF className="icon" />
                 Continue with facebook
               </button>
+              <div className="signup-text">
+                Don't have an account? <Link to="/signup">Sign up now!</Link>
+              </div>
             </div>
           )}
         </Formik>

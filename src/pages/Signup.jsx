@@ -1,4 +1,5 @@
 import { Formik } from "formik";
+import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toast";
 import { signupValidation } from "../services/valSchema";
 import { FaGoogle, FaFacebookF, FaHome } from "react-icons/fa";
@@ -78,6 +79,10 @@ const Signup = () => {
                 <FaFacebookF className="icon" />
                 Continue with facebook
               </button>
+
+              <div className="signup-text">
+                Already have an account? <Link to="/login">Log in now!</Link>
+              </div>
             </div>
           )}
         </Formik>
