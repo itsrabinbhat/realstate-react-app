@@ -2,7 +2,7 @@
 
 .login {
   width: min(90%, 1100px);
-  height: 100vh;
+  height: min(100vh, 1000px);
   margin-inline: auto;
   margin-bottom: 50px;
   display: flex;
@@ -163,29 +163,38 @@
 
 @media (max-width: 800px) {
   .login {
+    height: 100vh !important;
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    position: relative;
 
     .img-container {
-      flex: 2;
+      flex: auto;
 
       .img {
         .text {
-          padding: 2rem 1rem;
+          padding: 0rem 1rem;
           .title {
             margin-top: 8px;
-            font-size: 24px;
+            font-size: 20px;
           }
         }
       }
     }
 
     .form-container {
-      flex: 8;
+      position: initial;
+      flex: auto;
+      justify-content: flex-start;
+
+      form {
+        margin-top: 1rem !important;
+      }
 
       .title {
-        top: 20px;
+        top: 3%;
+        z-index: 99;
       }
       .forgot {
         font-size: 14px;
